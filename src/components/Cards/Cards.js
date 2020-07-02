@@ -10,24 +10,24 @@ const Cards = ({data}) =>{
                 <Grid item component={Card}>
                     <CardContent>
                         <Typography color="textSecondary" gutterBottom>Infected</Typography>
-                        <Typography variant="h5" >Real Data</Typography>
-                        <Typography color="textSecondary" gutterBottom>Date</Typography>
+                        <Typography variant="h5" >{data.confirmed?.value}</Typography>
+                        <Typography color="textSecondary" gutterBottom>{data.lastUpdate}</Typography>
                         <Typography variant="body2">Number of active cases</Typography>
                     </CardContent>
                 </Grid>
                 <Grid item component={Card}>
                     <CardContent>
                         <Typography color="textSecondary" gutterBottom>Recovered</Typography>
-                        <Typography variant="h5" >Real Data</Typography>
-                        <Typography color="textSecondary" gutterBottom>Date</Typography>
+                        <Typography variant="h5">{data.recovered?.value}</Typography>
+                        <Typography color="textSecondary" gutterBottom>{data.lastUpdate}</Typography>
                         <Typography variant="body2">Number of recoveries cases</Typography>
                     </CardContent>
                 </Grid>
                 <Grid item component={Card}>
                     <CardContent>
                         <Typography color="textSecondary" gutterBottom>Deaths</Typography>
-                        <Typography variant="h5" >Real Data</Typography>
-                        <Typography color="textSecondary" gutterBottom>Date</Typography>
+                        <Typography variant="h5" >{data.deaths?.value}</Typography>
+                        <Typography color="textSecondary" gutterBottom>{data.lastUpdate}</Typography>
                         <Typography variant="body2">Number of deaths</Typography>
                     </CardContent>
                 </Grid>
